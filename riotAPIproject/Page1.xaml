@@ -1,0 +1,23 @@
+﻿<Page x:Class="riotAPIproject.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:riotAPIproject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+
+    <Grid Margin="0,0,136,-0.4">
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="152,146,0,0" Height="24" Width="205" Text="Search a Summoner ID"/>
+        <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" Margin="153,260,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox x:Name="summonerNameInput" HorizontalAlignment="Left" Height="23" Margin="152,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="OnKeyDownHandler"/>
+        <RadioButton x:Name="EUWButton" Content="EUW" HorizontalAlignment="Left" Margin="381,194,0,0" VerticalAlignment="Top" GroupName="region"/>
+        <RadioButton x:Name="NAButton" Content="NA" HorizontalAlignment="Left" Margin="318,194,0,0" VerticalAlignment="Top" IsChecked="True" GroupName="region"/>
+        <TextBlock x:Name="messageBox" HorizontalAlignment="Left" Margin="152,315,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="81" Width="237"/>
+        <RadioButton x:Name="KRButton" Content="KR" HorizontalAlignment="Left" Margin="450,194,0,0" VerticalAlignment="Top" GroupName="region"/>
+        <TextBox x:Name="apiKeyBox" HorizontalAlignment="Left" Height="23" Margin="28,256,0,0" TextWrapping="Wrap" Text="api key" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="textFileLocationBox" HorizontalAlignment="Left" Height="23" Margin="28,284,0,0" TextWrapping="Wrap" Text="txt file" VerticalAlignment="Top" Width="60" SpellCheck.IsEnabled="True"/>
+
+    </Grid>
+</Page>
